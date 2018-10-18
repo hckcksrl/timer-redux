@@ -5,8 +5,14 @@ import reducer from "./reducer"
 import {createStore} from "redux"
 import Timer from "./component/Timer"
 
+// CreatrStore함수를 사용해 Store생성
+
 const store = createStore(reducer)
 
+
+// Flux아키텍처
+// Action => Dispatcher => Store => View => Action
+                
 
 export default class App extends React.Component {
   render() {

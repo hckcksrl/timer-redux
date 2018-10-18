@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { Action_Creator } from "../../reducer";
 
+// mapStateToProps , mapDispatchToProps 
 
 function mapStateToProps(state){
     const{
@@ -24,5 +25,7 @@ function mapDispatchToProps(dispatch) {
         Add : bindActionCreators(Action_Creator.Add , dispatch)
     }
 }
+
+// Export connet
 
 export default connect(mapStateToProps,mapDispatchToProps)(Timer)
