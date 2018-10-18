@@ -13,7 +13,6 @@ const store = createStore(reducer)
 // Flux아키텍처
 // Action => Dispatcher => Store => View => Action
                 
-
 export default class App extends React.Component {
   render() {
     return (
